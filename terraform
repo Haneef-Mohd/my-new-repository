@@ -1,0 +1,9 @@
+# 1. Provider (which cloud you use)
+provider "aws" {
+  region = "eu-west-3"
+}
+
+# 2. Resource (what you want to create)
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "my-simple-terraform-bucket-12345"
+}
